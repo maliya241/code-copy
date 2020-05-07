@@ -1,0 +1,60 @@
+* {
+	color: rgba(50, 77, 66, 1); /*dark green*/ 
+}
+
+body {
+	padding: 1.5em 0;
+}
+
+h1, section{
+	margin: 0 40px;
+}
+
+section {
+	background-image: linear-gradient(rgba(50, 77, 66, 0.099), rgba(50, 77, 66, 0.05));
+	/* background-color: rgba(50, 77, 66, 0.075); */
+	padding: 2.5px 20px;
+	margin-top: 8px;
+	border-radius: 15px;
+}
+
+figcaption {
+	font-size: 1.17em;
+	font-weight: bold;
+	margin-bottom: 0.25em;
+}
+
+pre {
+	margin: 0px 0px;
+}
+
+button {
+	position: relative;
+	top: -0.5em;
+}
+
+code {
+	font-family: "Courier New", Courier, monospace;
+}
+
+figure {
+	padding: 1em 1em 0 1em;
+	border-radius: 0.938em;
+	margin: 1em 0;
+}
+
+figure:nth-child(odd) {
+	background-color: rgba(71, 204, 155, 0.125); /*light green at 0.125 alpha*/
+}
+
+figure:nth-child(even) {
+	background-color: rgba(71, 204, 155, 0.25); /*light green at 0.25 alpha*/
+}
+
+button {
+	background-color: rgba(50, 77, 66, 0.5); /*dark green at 0.5 alpha*/
+	color: rgba(255, 255, 255, 1);
+	border: 2px solid rgba(50, 77, 66, 1); /*dark green*/
+	border-radius: 0.938em;
+	padding: 0.5em;
+}

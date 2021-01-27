@@ -1,18 +1,45 @@
 * {
 	color: rgba(50, 77, 66, 1); /*dark green*/ 
+	outline: none;
 }
 
 body {
 	padding: 1.5em 0;
 }
 
-h1, section{
+h1, section, nav{
 	margin: 0 40px;
+}
+
+h1, h2, button, nav {
+	font-family: "Times New Roman", Times, serif;
+}
+
+nav {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.nav_a {
+	display: inline-block;
+	font-size: 1.25em;
+	text-decoration: none;
+	margin-bottom: 0.25em;
+	padding: 0.25em 0.5em;
+	background-color: rgba(50, 77, 66, 1);
+	border: 2px solid rgba(50, 77, 66, 1);
+	color: rgba(255, 255, 255, 0.9);
+	border-radius: 0.6em;
+}
+
+.nav_a:hover, .nav_a:focus {
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: rgba(50, 77, 66, 1);
 }
 
 section {
 	background-image: linear-gradient(rgba(50, 77, 66, 0.099), rgba(50, 77, 66, 0.05));
-	/* background-color: rgba(50, 77, 66, 0.075); */
 	padding: 2.5px 20px;
 	margin-top: 8px;
 	border-radius: 15px;
@@ -25,12 +52,8 @@ figcaption {
 }
 
 pre {
-	margin: 0px 0px;
-}
-
-button {
-	position: relative;
-	top: -0.5em;
+	display: inline-block;
+	margin: 0px 1em 0px 0px;
 }
 
 code {
@@ -41,6 +64,8 @@ figure {
 	padding: 1em 1em 0 1em;
 	border-radius: 0.938em;
 	margin: 1em 0;
+	overflow-x: auto;
+	overflow-y: hidden;
 }
 
 figure:nth-child(odd) {
@@ -52,9 +77,44 @@ figure:nth-child(even) {
 }
 
 button {
-	background-color: rgba(50, 77, 66, 0.5); /*dark green at 0.5 alpha*/
-	color: rgba(255, 255, 255, 1);
+	font-weight: bold;
+	background-color: rgba(255, 255, 255, 0.75); /*white at 0.75 alpha*/
+	color: rgba(50, 77, 66, 1);
 	border: 2px solid rgba(50, 77, 66, 1); /*dark green*/
 	border-radius: 0.938em;
 	padding: 0.5em;
+	display: block;
+	position: relative;
+	top: -0.5em;
 }
+
+button:hover, button:focus {
+	background-color: rgba(50, 77, 66, 1); /*dark green*/
+	color: rgba(255, 255, 255, 0.9);
+}
+
+/*Scrollbar*/
+
+::-webkit-scrollbar, ::-webkit-scrollbar-track {
+	background: rgba(50, 77, 66, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 1); 
+	border: 2px solid rgba(50, 77, 66, 1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.75); 
+	border: 2px solid rgba(50, 77, 66, 1);
+}
+
+::-webkit-scrollbar:horizontal, ::-webkit-scrollbar-track:horizontal, ::-webkit-scrollbar-thumb:horizontal {
+	border-bottom-left-radius: 0.938em;
+	border-bottom-right-radius: 0.938em;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	border-radius: 0.938em;
+}
+

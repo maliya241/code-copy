@@ -7,7 +7,15 @@
 		<script src="main.js"></script>
 	</head>
 	<body>
-		<h1>HTML Quick Copy</h1>
+		<header id="topHeader" class="">
+			<h1>HTML Quick Copy</h1>
+			<nav id="nav" class="">
+				<a id="" class="nav_a" href="#headElements">Head Elements</a>
+				<a id="" class="nav_a" href="#bodyElements">Body Elements</a>
+				<a id="" class="nav_a" href="#tableElements">Table Elements</a>
+				<a id="" class="nav_a" href="#etc">Etc.</a>
+			</nav>
+		</header>
 		<section id="startingHTML">
 			<figure>
 				<figcaption>Simple Starting HTML</figcaption>
@@ -42,7 +50,7 @@
 			<figure>
 				<figcaption>Link for Script Files</figcaption>
 				<pre>
-<code data-lang="html" id="scriptLink"><span>		&lt;script src=""&gt;</span><span>&lt;/script"&gt;</span></code>
+<code data-lang="html" id="scriptLink"><span>		&lt;script src=""&gt;</span><span>&lt;/script&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#scriptLink')">Copy HTML</button>
 			</figure>
@@ -91,29 +99,71 @@
 		<section id="bodyElements">
 			<h2>Body Elements</h2>
 			<figure>
-				<figcaption>Unordered Lists</figcaption>
+				<figcaption>Header</figcaption>
 				<pre>
-<code data-lang="html" id="unorderedLists"><span>		&lt;ul&gt;</span>
-<span>			&lt;li&gt;</span><span>&lt;/li&gt;</span>
+<code data-lang="html" id="header"><span>		&lt;header id="" class=""&gt;</span>
+
+<span>		&lt;/header&gt;</span></code>
+				</pre>
+				<button onclick="copyCode('#header')">Copy HTML</button>			
+			</figure>
+			
+			<figure>
+				<figcaption>Footer</figcaption>
+				<pre>
+<code data-lang="html" id="footer"><span>		&lt;footer id="" class=""&gt;</span>
+
+<span>		&lt;/footer&gt;</span></code>
+				</pre>
+				<button onclick="copyCode('#footer')">Copy HTML</button>			
+			</figure>
+			
+			<figure>
+				<figcaption>Nav</figcaption>
+				<pre>
+<code data-lang="html" id="nav"><span>		&lt;nav id="" class=""&gt;</span>
+<span>			&lt;a id="" class="" href=""&gt;</span><span>&lt;/a&gt;</span>
+<span>		&lt;/nav&gt;</span></code>
+				</pre>
+				<button onclick="copyCode('#nav')">Copy HTML</button>			
+			</figure>
+			
+			<figure>
+				<figcaption>Nav with Unordered List</figcaption>
+				<pre>
+<code data-lang="html" id="navUL"><span>		&lt;nav id="" class=""&gt;</span>
+<span>				&lt;ul id="" class=""&gt;</span>
+<span>					&lt;li id="" class=""&gt;</span><span>&lt;a id="" class="" href=""&gt;</span><span>&lt;/a&gt;</span><span>&lt;/li&gt;</span>
+<span>				&lt;/ul&gt;</span>
+<span>		&lt;/nav&gt;</span></code>
+				</pre>
+				<button onclick="copyCode('#navUL')">Copy HTML</button>			
+			</figure>
+			
+			<figure>
+				<figcaption>Unordered List</figcaption>
+				<pre>
+<code data-lang="html" id="unorderedList"><span>		&lt;ul id="" class=""&gt;</span>
+<span>			&lt;li id="" class=""&gt;</span><span>&lt;/li&gt;</span>
 <span>		&lt;/ul&gt;</span></code>
 				</pre>
-				<button onclick="copyCode('#unorderedLists')">Copy HTML</button>				
+				<button onclick="copyCode('#unorderedList')">Copy HTML</button>				
 			</figure>
 					
 			<figure>
-				<figcaption>Ordered Lists</figcaption>
+				<figcaption>Ordered List</figcaption>
 				<pre>
-<code data-lang="html" id="orderedLists"><span>		&lt;ol&gt;</span>
-<span>			&lt;li&gt;</span><span>&lt;/li&gt;</span>
+<code data-lang="html" id="orderedList"><span>		&lt;ol id="" class=""&gt;</span>
+<span>			&lt;li id="" class=""&gt;</span><span>&lt;/li&gt;</span>
 <span>		&lt;/ol&gt;</span></code>
 				</pre>
-				<button onclick="copyCode('#orderedLists')">Copy HTML</button>
+				<button onclick="copyCode('#orderedList')">Copy HTML</button>
 			</figure>
 				
 			<figure>
 				<figcaption>Image with Caption</figcaption>
 				<pre>
-<code data-lang="html" id="captionedImg"><span>		&lt;figure&gt;</span>
+<code data-lang="html" id="captionedImg"><span>		&lt;figure id="" class=""&gt;</span>
 <span>			&lt;img src="img/" alt=""&gt;</span>
 <span>			&lt;figcaption&gt;</span><span>&lt;/figcaption&gt;</span>
 <span>		&lt;/figure&gt;</span></code>
@@ -122,23 +172,50 @@
 			</figure>
 		</section>
 		
-		<section id="table">
-			<h2>Table</h2>
+		<section id="tableElements">
+			<h2>Table Elements</h2>
+			<figure>
+				<figcaption>Complete Table</figcaption>
+				<pre>
+<code data-lang="html" id="completeTable"><span>		&lt;table id="" class=""&gt;</span>
+<span>			&lt;caption id="" class=""&gt;</span><span>&lt;/caption&gt;</span>
+<span>			&lt;thead id="" class=""&gt;</span>
+<span>				&lt;tr id="" class=""&gt;</span>
+<span>					&lt;th&gt;</span><span>&lt;/th&gt;</span>
+<span>					&lt;th&gt;</span><span>&lt;/th&gt;</span>
+<span>				&lt;/tr&gt;</span>
+<span>			&lt;/thead&gt;</span>
+<span>			&lt;tbody id="" class=""&gt;</span>
+<span>				&lt;tr id="" class=""&gt;</span>
+<span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
+<span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
+<span>				&lt;/tr&gt;</span>
+<span>			&lt;/tbody&gt;</span>
+<span>			&lt;tfoot id="" class=""&gt;</span>
+<span>				&lt;tr id="" class=""&gt;</span>
+<span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
+<span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
+<span>				&lt;/tr&gt;</span>
+<span>			&lt;/tfoot&gt;</span>
+<span>		&lt;/table&gt;</span></code>
+				</pre>
+				<button onclick="copyCode('#completeTable')">Copy HTML</button>
+			</figure>	
+			
 			<figure>
 				<figcaption>Table</figcaption>
 				<pre>
-<code data-lang="html" id="simpleTable"><span>		&lt;table&gt;</span>
+<code data-lang="html" id="simpleTable"><span>		&lt;table id="" class=""&gt;</span>
 
 <span>		&lt;/table&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#simpleTable')">Copy HTML</button>
 			</figure>	
 
-
 			<figure>
 				<figcaption>Table Caption</figcaption>
 				<pre>
-<code data-lang="html" id="tableCaption"><span>			&lt;caption&gt;</span><span>&lt;/caption&gt;</span></code>
+<code data-lang="html" id="tableCaption"><span>			&lt;caption id="" class=""&gt;</span><span>&lt;/caption&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#tableCaption')">Copy HTML</button>
 			</figure>
@@ -146,8 +223,8 @@
 			<figure>
 				<figcaption>Table Head</figcaption>
 				<pre>
-<code data-lang="html" id="tableHead"><span>			&lt;thead&gt;</span>
-<span>				&lt;tr&gt;</span>
+<code data-lang="html" id="tableHead"><span>			&lt;thead id="" class=""&gt;</span>
+<span>				&lt;tr id="" class=""&gt;</span>
 <span>					&lt;th&gt;</span><span>&lt;/th&gt;</span>
 <span>					&lt;th&gt;</span><span>&lt;/th&gt;</span>
 <span>				&lt;/tr&gt;</span>
@@ -159,8 +236,8 @@
 			<figure>
 				<figcaption>Table Body</figcaption>
 				<pre>
-<code data-lang="html" id="tableBody"><span>			&lt;tbody&gt;</span>
-<span>				&lt;tr&gt;</span>
+<code data-lang="html" id="tableBody"><span>			&lt;tbody id="" class=""&gt;</span>
+<span>				&lt;tr id="" class=""&gt;</span>
 <span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
 <span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
 <span>				&lt;/tr&gt;</span>
@@ -172,8 +249,8 @@
 			<figure>
 				<figcaption>Table Foot</figcaption>
 				<pre>
-<code data-lang="html" id="tableFoot"><span>			&lt;tfoot&gt;</span>
-<span>				&lt;tr&gt;</span>
+<code data-lang="html" id="tableFoot"><span>			&lt;tfoot id="" class=""&gt;</span>
+<span>				&lt;tr id="" class=""&gt;</span>
 <span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
 <span>					&lt;td&gt;</span><span>&lt;/td&gt;</span>
 <span>				&lt;/tr&gt;</span>
@@ -185,7 +262,7 @@
 					<figure>
 				<figcaption>Table th colspan</figcaption>
 				<pre>
-<code data-lang="html" id="tableTHColspan"><span>					&lt;th colspan=""&gt;</span><span>&lt;/th&gt;</span></code>
+<code data-lang="html" id="tableTHColspan"><span>					&lt;th colspan="" id="" class=""&gt;</span><span>&lt;/th&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#tableTHColspan')">Copy HTML</button>
 			</figure>
@@ -193,7 +270,7 @@
 			<figure>
 				<figcaption>Table th rowspan</figcaption>
 				<pre>
-<code data-lang="html" id="tableTHRowspan"><span>					&lt;th rowspan=""&gt;</span><span>&lt;/th&gt;</span></code>
+<code data-lang="html" id="tableTHRowspan"><span>					&lt;th rowspan="" id="" class=""&gt;</span><span>&lt;/th&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#tableTHRowspan')">Copy HTML</button>
 			</figure>
@@ -201,7 +278,7 @@
 			<figure>
 				<figcaption>Table td colspan</figcaption>
 				<pre>
-<code data-lang="html" id="tableTDColspan"><span>					&lt;td colspan=""&gt;</span><span>&lt;/td&gt;</span></code>
+<code data-lang="html" id="tableTDColspan"><span>					&lt;td colspan="" id="" class=""&gt;</span><span>&lt;/td&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#tableTDColspan')">Copy HTML</button>
 			</figure>
@@ -209,7 +286,7 @@
 			<figure>
 				<figcaption>Table td rowspan</figcaption>
 				<pre>
-<code data-lang="html" id="tableTDRowspan"><span>					&lt;td rowspan=""&gt;</span><span>&lt;/td&gt;</span></code>
+<code data-lang="html" id="tableTDRowspan"><span>					&lt;td rowspan="" id="" class=""&gt;</span><span>&lt;/td&gt;</span></code>
 				</pre>
 				<button onclick="copyCode('#tableTDRowspan')">Copy HTML</button>
 			</figure>
